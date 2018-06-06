@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg29587"
+   version="1.1"
+   viewBox="0 0 26.458333 22.575147"
+   height="85.323387"
+   width="100">
+  <defs
+     id="defs29581" />
+  <metadata
+     id="metadata29584">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-18.614174,-216.27321)"
+     id="layer1">
+    <g
+       transform="matrix(0.33333335,0,0,0.33333335,10.676673,198.8363)"
+       id="g113752-96">
+      <g
+         id="g113261-0-4-8"
+         transform="matrix(0.58796296,0,0,0.58796296,37.041666,52.310742)"
+         style="fill:#ffffff;fill-opacity:1">
+        <g
+           style="display:none;fill:#ffffff;fill-opacity:1"
+           class="st0"
+           transform="translate(-15,-283.55)"
+           id="layer1-83-1-0-80">
+          <path
+             d="m 20,285.2 v 80 l 60,-80"
+             class="st1"
+             id="path4798-2-0-7"
+             style="fill:#ffffff;fill-opacity:1" />
+          <path
+             d="m 50,325.3 30,40 h 20 v -80 l -60,80"
+             class="st1"
+             id="path4800-6-9-5"
+             style="fill:#ffffff;fill-opacity:1" />
+        </g>
+        <g
+           transform="translate(-15,-18.3)"
+           style="display:none;fill:#ffffff;fill-opacity:1"
+           class="st0"
+           id="layer2-6-5-0-96">
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="m 54,57 -8,6 30,40 8,-6 z"
+             class="st2"
+             id="path4809-9-59-5" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="m 15,20 v 80 l 10,5 60,-85 H 75 L 25,85 V 20 Z"
+             class="st3"
+             id="path4803-0-3-85" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="m 15,20 v 85 H 25 V 20 Z"
+             class="st2"
+             id="path4805-9-9-3" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="m 106,-23 -120,160 8,6 120,-160 z"
+             class="st2"
+             id="path4807-4-6-4" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="M 126,-23 63.7,60 70,68.3 134,-17 Z M 56.3,86.7 50,78.3 6,137 l 8,6 z"
+             class="st2"
+             id="path4811-4-3-8" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="m 60,81.6 v 10 h 51.8 v -10 z"
+             class="st2"
+             id="path4813-3-2-3" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="m 95,10 v 90 h 10 V 10 Z"
+             class="st2"
+             id="path4815-3-76-2" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="M 52.5,38.4 60,28.4 H 15 v 10 z"
+             class="st2"
+             id="path5569-1-2-8-9" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="m 25,91.7 v 10 h 51.8 v -10 z"
+             class="st2"
+             id="path5587-2-6-4-6" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="m 43.2,8.3 v 10 H 95 v -10 z"
+             class="st2"
+             id="path5589-5-2-0-6" />
+        </g>
+        <g
+           transform="translate(-15,-18.3)"
+           style="display:none;fill:#ffffff;fill-opacity:1"
+           class="st0"
+           id="layer3-7-4-3-64">
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="M 25,101.7 15,98.4 v -60 l 10,-10 h 35 l -7.5,10 H 25 L 25.2,85 75,18.3 H 87.7 L 56.4,60 72.6,81.6 H 95.1 L 95,35 70,68.3 63.7,60 95,18.3 l 10,3.3 v 60 L 95.2,91.7 80,91.6 60,81.6 50,68.3 Z"
+             class="st4"
+             id="path5585-1-4-1-6" />
+          <path
+             style="display:inline;fill:#ffffff;fill-opacity:1"
+             d="M 32.5,101.7 50,78.3 l 6.3,8.3 -11.3,15 z"
+             class="st5"
+             id="path5591-5-4-2-7" />
+        </g>
+        <g
+           transform="translate(-15,-18.3)"
+           id="g5607-2-1-3"
+           style="fill:#ffffff;fill-opacity:1">
+          <path
+             d="M 75,18.3 25,85 V 38.4 H 52.5 L 60,28.4 H 25 l -10,10 v 60 l 10,3.3 25,-33.3 10,13.3 20,10 15.2,0.1 9.8,-10.1 v -60 L 95,18.4 63.7,60 70,68.3 95,35 V 81.7 H 72.7 L 56.4,60 87.6,18.3 Z m -25,60 -17.5,23.3 H 45 l 11.3,-15 z"
+             id="path5603-5-6-1-81"
+             style="fill:#ffffff;fill-opacity:1" />
+        </g>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.58351564px;line-height:1.25;font-family:'iCiel Brandon Text';-inkscape-font-specification:'iCiel Brandon Text';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.18958788"
+         x="23.167902"
+         y="119.96034"
+         id="text113525-1-9"><tspan
+           id="tspan113523-5-1"
+           x="23.167902"
+           y="119.96034"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'iCiel Brandon Text';-inkscape-font-specification:'iCiel Brandon Text';fill:#ffffff;fill-opacity:1;stroke-width:0.18958788">KUNDERGROUND ART</tspan></text>
+    </g>
+  </g>
+</svg>

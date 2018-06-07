@@ -1,0 +1,7 @@
+.square {
+  width : 5vmin;
+  height: 5vmin;
+  background: lightgray;
+  display: inline-block;
+  margin: 0.5vmin;
+}

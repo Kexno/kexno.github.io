@@ -1,0 +1,6 @@
+function AddSquare($container) {
+
+}
+$(function() {
+
+});

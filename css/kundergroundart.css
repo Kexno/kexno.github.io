@@ -1,1 +1,31 @@
 @charset "utf-8";
+
+.content-margin{
+	height: 100vh;
+	padding: 0px 40px 70px 40px;
+	
+}
+.content-box{
+	height: 100%;
+	width: 100%;
+}
+.content-box img{
+	height: 50%;
+	top: 25%;	
+}
+#about{
+	height: 100vh;
+	background-image: url(../img/background/about-background.jpg);
+	background-size: cover;
+	background-position: right;
+}
+#about .container{
+    padding: 0;
+}
+@media (min-width: 768px) { 
+
+	.content-margin{
+		padding: 0px 80px 70px 80px;
+	}
+
+}

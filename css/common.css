@@ -140,8 +140,8 @@ body {background-color: black;}
 .container-fluid{padding: 0px;}
 
 #bg-animation, #bg-hover{
-	width: 100vw;
-	position: absolute;
+	width: 100%;
+	position: fixed;
 	bottom: 0;
 }
 #bg-hover{padding: 0.505%;}
@@ -215,7 +215,7 @@ body {background-color: black;}
 	margin-left: -165px;
 }
 #panel-bg{
-	opacity: 0.5;
+	opacity: 0.75;
 	bottom: 0px;
 }
 #panel-music, #panel-design, #panel-blog, #panel-contact{
@@ -247,4 +247,63 @@ body {background-color: black;}
 }   
 #home-button.active{
 	opacity: 1;
+}
+
+/* SOCIAL */
+
+#social-show{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    opacity: 0.5;
+}
+#social-item{
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    margin-top: -140px;
+}
+#social-item a{
+    position: absolute;
+    opacity: 0.75;
+    transition: 0.2s;
+}
+#social-item a:hover{
+    opacity: 1;
+}
+#soundcloud{top: 60px;}
+#deviantart{top: 120px}
+#facebook{top: 180px;}
+#googleplus{top: 240px;}
+#content{
+    padding: 0px 40px 0px 40px;
+}
+
+
+@media (min-width: 576px) { 
+
+
+
+}
+
+@media (min-width: 768px) { 
+
+    #social-item{
+        left: 20px;
+    }
+    #content{
+        padding: 0px 60px 0px 60px;
+    }
+}
+
+@media (min-width: 992px) {
+
+
+
+}
+
+@media (min-width: 1200px) { 
+
+
+
 }

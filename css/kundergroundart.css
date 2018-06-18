@@ -8,8 +8,9 @@
 .content-box{
 	height: 100%;
 	width: 100%;
+    position: relative;
 }
-.content-box img{
+#welcome img{
 	height: 50%;
 	top: 25%;	
 }
@@ -22,10 +23,128 @@
 #about .container{
     padding: 0;
 }
-@media (min-width: 768px) { 
+.category-mb{
+	padding: 40px 0px;
+}
+.category-tittle{
+	height: 25px;
+}
+.category-icon{
+	height: 92.667px;
+}
+.icon-stacked-l{
+	padding-left: 0px;
+	padding-right: 20px;
+}
+.icon-stacked-r{
+	padding-left: 20px;
+	padding-right: 00px;
+}
+.icon-stacked-l img, .icon-stacked-r img{
+	width: 100%;
+}
+.text-l, .text-r{
+	text-align: justify;
+	padding: 0px;
+}
+#about-content{
+	display: block;
+	padding: 20px;
+	text-align: justify;
+	background-color: rgba(0,0,0,0.5);
+	margin: 0px;
+	font-size: 12pt;
+	color: white;
+}
+.button-group-1{
+	margin-top: 20px;
+}
+.category a{
+	display: block;
+	height: 40px;
+	background-color: rgba(255,255,255,0.75);
+	margin-top: 20px;
+	padding-top: 7px;
+	text-decoration: none;
+	position: relative;
+	overflow: hidden;
+}
+.text-l a p, .text-r a p{
+	color: black;
+	text-align: center;
+	position: relative;
+	width: 100%;
+	padding: 0;
+}
+.button-hover{
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	transform: translateY(100%);
+	transition: all 0.2s;
+}
+.category a:hover .button-hover{
+	transform: translateY(0%);
+}
+.space{
+	width: 20px;
+}
+.category{
+    position: relative;
+}
+.home-footer{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
 
 	.content-margin{
 		padding: 0px 80px 70px 80px;
 	}
+	.category{
+		height: 100%;
+	}
+	.text-r{
+		margin: 0px;
+		padding-left: 20px;
+		padding-right: 0px;
+	}
+	.text-l{
+		margin: 0px;
+		padding-left: 0px;
+		padding-right: 20px;
+	}
 
+}
+
+@media (min-width: 992px) {
+	
+	.text-r, .text-l, .text-r p{
+		font-size: 14pt;
+	}
+	.category a{
+		padding-top: 5px
+	}
+	
+}
+
+@media (min-width: 1200px) {
+	
+	.icon-stacked-l{
+		padding-right: 40px;
+	}
+	.icon-stacked-r{
+		padding-left: 40px;
+	}
+	.text-l{
+		padding-right: 40px;
+	}
+	.text-r{
+		padding-left: 40px;
+	}
+	
 }

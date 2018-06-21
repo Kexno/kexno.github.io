@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@keyframes ka{
+	0% {margin-top: -100vh}
+	100% {margin-top: 0;}
+}
+
 .content-margin{
 	height: 100vh;
 	padding: 0px 40px 70px 40px;
@@ -13,6 +18,15 @@
 #welcome img{
 	height: 50%;
 	top: 25%;	
+	transition: 1s;
+	animation-name: ka;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+#welcome img:hover{
+	transform: scale(1.05);
 }
 #about{
 	height: 100vh;

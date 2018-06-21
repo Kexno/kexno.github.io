@@ -17,10 +17,18 @@
 .ka-stacked{
     padding-right: 40px;
     padding-left: 10px;
+    animation-name: ka-stacked;
 }
 .category-stacked{
     padding-left: 40px;
     padding-right: 10;
+    animation-name: category-stacked;
+}
+.ka-stacked, .category{
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
 }
 .welcome-lg img{
     width: 100%;
@@ -84,7 +92,7 @@ a p{
     margin-top: 40px;
     position: relative;
 }
-.item img. .item-b img{
+.item img, .item-b img{
     width: 100%;
 }
 .item p{
@@ -98,6 +106,7 @@ a p{
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     transition: all 0.2s;
+	color: white;
 }
 .item-tittle{
     color: black;
@@ -127,11 +136,13 @@ a p{
 
 @media (min-width: 768px) {
     
+    
+
     #welcome{
         padding: 0px 20px 70px 20px;
     }
     .item p{
-        transform: translateY(44px);
+        transform: translateY(0px);
     }
     .item:hover .item p{
         transform: translateY(0);

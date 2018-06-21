@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@keyframes content{
+    0% {margin-top: 120px; opacity: 0;}
+    100% {margin-top: 40px; opacity: 1;}
+}
+
+.content{   
+    margin-top: 40px;
+    animation-name: content;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+#text{
+    margin-top: 20px;
+}
+#tittle{
+    font-size: 16pt;
+}
+#description{
+    text-align: justify;
+    margin-bottom: 0;
+}
+.info{
+    margin-bottom: 0;
+}
+.element-text{
+    margin-top: 40px;
+    text-align: center;
+}
+#tittle, .info{
+    margin-bottom: 20px;
+}
+.scplayer{
+    
+}
+
+@media (min-width: 1200px) {
+
+    #text{
+        padding-left: 40px;
+        margin-top: 0;
+    }
+
+}

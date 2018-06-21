@@ -195,40 +195,20 @@ body {background-color:
 #spectrum8{animation-name: spectrum8;}
 #spectrum9{animation-name: spectrum9;}
 #spectrum10{animation-name: spectrum10;}
-.square0{
-	width: 100%;
-	opacity: 0;
-	transition: all 1s;
-}
-.square0:hover{
-	opacity: 0.025;
-}
-
-/* VOLUME */
-
-#volume-open{
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	opacity: 0.5;
-	transition: all 0.2s;
-	z-index: 10;
-}
-#volume-open:hover{
-	opacity: 1;
-}
 
 /* PANEL */
 
-#home-button{
+#nav{
 	position: fixed;
-	bottom: 10px;
+}
+#home-button{
+	position: absolute;
 	height: 60px;
 	width: 60px;
+	bottom: 0;
 	border-radius: 50%;
 	background-color: rgba(255,255,255,0.5);
-	left: 50%;
-	margin-left: -30px;
+	margin-left: 135px;
 	z-index: 10;
 }
 #home-button img{
@@ -236,15 +216,20 @@ body {background-color:
 	margin-top: 16.1px;
     transition: all 0.2s;
 }
-#panel{
+#nav{
 	position: fixed;
-	bottom: 20px;
+	bottom: 10px;
+	width: auto;
 	left: 50%;
 	margin-left: -165px;
 	z-index: 10;
 }
+#panel{
+	position: absolute;
+	bottom: 10px;
+}
 #panel-bg{
-	opacity: 0.75;
+	opacity: 0.95;
 	bottom: 0px;
 }
 #panel-music, #panel-design, #panel-blog, #panel-contact{
@@ -286,24 +271,27 @@ body {background-color:
 
 /* SOCIAL */
 
+#social{
+	top: 0;
+	left: 10px;
+	position: fixed;
+	height: 100vh;
+}
 #social-show{
-    position: fixed;
+    position: absolute;
     top: 10px;
-    left: 10px;
     opacity: 0.5;
 	z-index: 10;
 }
 #social-hide{
-	position: fixed;
+	position: absolute;
     top: 10px;
-    left: 10px;
     opacity: 0.75;
 	z-index: 10;
 }
 #social-item-mb{
-    position: fixed;
+    position: absolute;
 	top: 70px;
-	left: 10px;
 	transform: translateX(-50px);
 	transition: all 0.2s;
 	z-index: 10;
@@ -314,23 +302,112 @@ body {background-color:
     transition: 0.2s;
 }
 #social-item{
-	position: fixed;
+	position: absolute;
 	top: 50%;
-	left: 20px;
 	margin-top: -170px;
 	z-index: 10;
 }
 #social-item a:hover{
-    opacity: 1;
+	opacity: 1;
 }
 .soundcloud{top: 60px;}
-.deviantart{top: 120px}
+.deviantart{top: 120px;}
 .facebook{top: 180px;}
 .googleplus{top: 240px;}
-.twitter{top: 300px}
+.twitter{top: 300px;}
+
 .content{
     padding: 0px 40px 0px 40px;
 }
+
+/* BACKGROUND MUSIC */
+
+@keyframes vs1{
+    0% {height: 4px;}
+    100% {height: 22px;}
+}
+@keyframes vs2{
+    0% {height: 4px;}
+    100% {height: 22px;}
+}
+@keyframes vs3{
+    0% {height: 4px;}
+    100% {height: 22px;}
+}
+@keyframes vs4{
+    0% {height: 4px;}
+    100% {height: 22px;}
+}
+
+#volume{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 0%;
+    opacity: 0.5;
+    transition: all 0.5s;
+	padding: 9px 8px;
+	margin: 0;
+	z-index: 10;
+}
+#volume:hover{
+	opacity: 1;
+	transform: rotateZ(-180deg);
+}
+.volume-spectrum{
+    background-color: black;
+    height: 4px;
+    width: 4px;
+    margin: 0px 1px;
+	
+    animation-duration: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+    animation-direction: alternate;
+}
+#vs1{animation-name: vs1;}
+#vs2{animation-name: vs2; animation-delay: 0.2s;}
+#vs3{animation-name: vs3; animation-delay: 0.4s;}
+#vs4{animation-name: vs4; animation-delay: 0.6s;}
+
+#mute{
+	width: 100%;
+	height: 100%;
+}
+.mute-spectrum{
+	background-color: black;
+    height: 4px;
+    width: 4px;
+    margin: 0px 1px;
+}
+
+/* COMMON ELEMENTS ANIMATION */
+
+@keyframes nav{
+	0% {margin-bottom: -70px;}
+	100% {margin-bottom: 0;}
+}
+@keyframes social{
+	0% {margin-left: -60px;}
+	100% {margin-left: 0;}
+}
+@keyframes volume{
+	0% {margin-right: -60px;}
+	100% {margin-right: 0;}
+}
+
+#nav, #social, #volume{
+	animation-duration: 0.2s;
+	animation-timing-function: ease-out;
+	animation-delay: 2s;
+	animation-fill-mode: both;
+}
+#nav{animation-name: nav;}
+#social{animation-name: social;}
+#volume{animation-name: volume;}
 
 /* FOOTER */
 
@@ -360,13 +437,17 @@ footer p, .home-footer p{
 
 @media (min-width: 768px) { 
 
-	#volume-open{
+	#social{
+		left: 20px;
+	}
+	#volume{
 		top: 20px;
 		right: 20px;
 	}
     #content{
         padding: 0px 60px 0px 60px;
     }
+    
 }
 
 @media (min-width: 992px) {

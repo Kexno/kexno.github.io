@@ -43,13 +43,14 @@
 					  
 		  <!-- PANEL -->
 		  
-		  <div id="nav">
-		  <a id="home-button" class="active" href="index.html">
-			  <img src="img/elements/ka-black.svg">
+		  <div id="nav"> 
+          <img id="homebt-border" src="img/elements/homebt-border.svg">
+		  <a id="home-button" href="index.html">
+			  <img src="img/elements/ka-black.svg">  
 		  </a>
 		  <div id="panel">
 			  <img id="panel-bg" src="img/elements/panel.svg">
-			  <a href="music.html"><img id="panel-music" src="img/elements/panel-music.svg"></a>
+			  <a href="music.html" class="active"><img id="panel-music" src="img/elements/panel-music.svg"></a>
 			  <a href="design.html"><img id="panel-design" src="img/elements/panel-design.svg"></a>
 			  <a href="blog.html"><img id="panel-blog" src="img/elements/panel-blog.svg"></a>
 			  <a href="contact.html"><img id="panel-contact" src="img/elements/panel-contact.svg"></a>
@@ -103,22 +104,29 @@
 			  </a>
 		  </div>
 		  </div>
+        
+        <!-- SEARCH -->      
+              
+        <div id="search-mg">
+            <input id="search" type="text" name="search" placeholder="Search in Music">
+        </div>
 		  
 	  </div>
             
 		<!-- CONTENT -->
             
-		<div class="content container">
+		<div class="kontainer">
 			
             <!-- WELCOME -->
             
             <div id="welcome">
                 <div class="welcome-sm row no-gutters d-md-none align-items-center">
-                    <div class="col-12 col-md">
+                    <div class="col-12">
                         <img src="img/elements/ka-stacked.svg">
                         <div id="vline"></div>
-                        <div class="col-12 col-md"><img src="img/elements/music-welcome.svg"></div>
+                        <img src="img/elements/music-welcome.svg">
                     </div>
+                    
                 </div>
                 <div class="row no-gutters align-items-center d-none d-md-flex">
                     <div class="welcome-lg col-12">
@@ -136,127 +144,149 @@
             <div class="row library">
                 
                 <div class="col-12">
-                    <a href="" class="category">
-                        <p>KARTIST'S COMPOSITION</p>
-                        <!-- <a class="see-all-button" href=""><img src="img/elements/see-all.svg"></a> -->
+                    <a href="music/compositions/compositions.html" class="category lib-click row">
+                        <div class="button-hover"></div>
+                        <p class="col">KARTIST'S COMPOSITION</p>
+                        <img class="col-auto" src="img/elements/see-all.svg">
                     </a>    
                 </div>
-                <a class="col-6 col-lg-4 item" href="lilostar.html">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Lilo Star &#40;electronic ver. 1&#41;</p>
+                <a class="col-6 col-lg-4 item" href="music/compositions/lilostar.html">
+                    <img src="music/compositions/thumb/LiloStar-thumbnail.png">
+                    <div class="tag">NEW</div>
+                    <div class="tittle-mg"><p>Lilo Star &#40;electro&#41;</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Passionate Memory</p>
+                    <img src="music/compositions/thumb/PassionateMemory-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Passionate Memory</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Mysterious Space</p>
+                    <img src="music/compositions/thumb/MysteriousSpace-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Mysterious Space</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Mysterious Space</p>
+                    <img src="music/compositions/thumb/LiloStar(piano)-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Lilo Star &#40;piano&#41;</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Can't Stop</p>
+                    <img src="music/compositions/thumb/Can'tStop-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Can't Stop</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Kunderground Art theme song</p>
+                    <img src="music/compositions/thumb/HappyMelody-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Happy Melody</p></div>
                 </a>
                 
                 <div class="col-12">
-                    <a href="" class="category">
-                        <p>ARRANGED BY KARTIST</p>
-                        <!-- <a class="see-all-button" href=""><img src="img/elements/see-all.svg"></a> -->
+                    <a href="music/arrangement/arrangement.html" class="category lib-click row">
+                        <div class="button-hover"></div>
+                        <p class="col">ARRANGED BY KARTIST</p>
+                        <img class="col-auto" src="img/elements/see-all.svg">
                     </a>    
                 </div>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Song From A Secret Garden</p>
+                    <img src="music/arrangement/thumb/SongFromASecretGarden-thumb.png">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Song From A Secret Garden</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Vo nguoi ta</p>
+                    <img src="music/arrangement/thumb/VoNguoiTa-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Vo nguoi ta</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>We Don't Talk Anymore</p>
+                    <img src="music/arrangement/thumb/WeDontTalkAnymore-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>We Don't Talk Anymore</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Dandelion's Promise</p>
+                    <img src="music/arrangement/thumb/Dandelion'sPromise-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Dandelion's Promise</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Megalovania</p>
+                    <img src="music/arrangement/thumb/Megalovania-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Megalovania</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Angel We Have Head On High</p>
+                    <img src="music/arrangement/thumb/AngeWeHaveHeadOnHigh-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Angel We Have Head On High</p></div>
                 </a>
                 
                 <div class="col-12">
-                    <a href="" class="category">
-                        <p>OTHER COMPOSITIONS</p>
-                        <!-- <a class="see-all-button" href=""><img src="img/elements/see-all.svg"></a> -->
+                    <a href="music/others/others.html" class="category lib-click row">
+                        <div class="button-hover"></div>
+                        <p class="col">OTHER ARTIST'S COMPOSITIONS</p>
+                        <img class="col-auto" src="img/elements/see-all.svg">
                     </a>    
                 </div>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Secret OST</p>
+                    <img src="music/others/thumb/TimeForgets-thumb.png">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Time Forgets</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>For Elise</p>
+                    <img src="music/others/thumb/ForElise-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>For Elise</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Chopin Nocturene Op.9 No.2</p>
+                    <img src="music/others/thumb/CP-No9n2-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Chopin Nocturene Op.9 No.2</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Kiss The Rain</p>
+                    <img src="music/others/thumb/KissTheRain-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Kiss The Rain</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Time Forgets</p>
+                    <img src="music/others/thumb/Secret-thumb.svg">
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Secret (OST)</p></div>
                 </a>
                 <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Sunny Dream</p>
+                    <img src="music/others/thumb/SunnyDream-thumb.svg".0>
+                    <div class="tag">COMING SOON</div>
+                    <div class="tittle-mg"><p>Sunny Dream</p></div>
                 </a>
                 
                 <div class="col-12">
-                    <a href="" class="category">
-                        <p>FAVORITE PLAYLISTS</p>
-                        <!-- <a class="see-all-button" href=""><img src="img/elements/see-all.svg"></a> -->
+                    <a href="music/playlists/playlists.html" class="category lib-click row">
+                        <div class="button-hover"></div>
+                        <p class="col">OTHER ARTIST'S BEST MUSIC PLAYLISTS</p>
+                        <img class="col-auto" src="img/elements/see-all.svg">
                     </a>    
                 </div>
-                <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Best of Maksim Mrvica</p>
+                <a class="col-6 col-lg-4 item" href="music/playlists/MaksimMrvica.html">
+                    <img src="music/playlists/thumb/MaksimMrvica-thumb.jpg">
+                    <div class="tittle-mg"><p>Best of Maksim Mrvica</p></div>
                 </a>
-                <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Best of Yiruma</p>
+                <a class="col-6 col-lg-4 item" href="music/playlists/Yiruma.html">
+                    <img src="music/playlists/thumb/Yiruma-thumb.png">
+                    <div class="tittle-mg"><p>Best of Yiruma</p></div>
                 </a>
-                <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Best of July</p>
+                <a class="col-6 col-lg-4 item" href="music/playlists/July.html">
+                    <img src="music/playlists/thumb/July-thumb.png">
+                    <div class="tittle-mg"><p>Best of July</p></div>
                 </a>
-                <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Best of The Piano Guys</p>
+                <a class="col-6 col-lg-4 item" href="music/playlists/ThePianoGuys.html">
+                    <img src="music/playlists/thumb/ThePianoGuys-thumb.png">
+                    <div class="tittle-mg"><p>Best of The Piano Guys</p></div>
                 </a>
-                <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Best of Two Steps From Hell</p>
+                <a class="col-6 col-lg-4 item" href="music/playlists/TwoStepsFromHell.html">
+                    <img src="music/playlists/thumb/TwoStepFromHell-thumb.png">
+                    <div class="tittle-mg"><p>Best of Two Steps From Hell</p></div>
                 </a>
-                <a class="col-6 col-lg-4 item">
-                    <img src="img/thumb/BlueSpace-SkyOnly.png">
-                    <p>Best of Chopin: Nocturnes</p>
+                <a class="col-6 col-lg-4 item" href="music/playlists/Chopin-Nocturnes.html">
+                    <img src="music/playlists/thumb/Chopin-thumb.png">
+                    <div class="tittle-mg"><p>Best of Chopin: Nocturnes</p></div>
                 </a>
                 
             </div>
@@ -265,11 +295,7 @@
 		
 		<!-- FOOTER -->
 			
-		<footer class="container-fluid">
-			<div class="row no-gutters justify-content-between">
-				<p id="footer-l" class="col-12 col-xl-auto">Copyright © 2018 Kartist. All rights reserved.</p>
-			</div>
-		</footer>
+		<footer>Copyright © 2018 Kartist. All rights reserved.</footer>
 		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 		<script src="js/jquery-3.2.1.min.js"></script>

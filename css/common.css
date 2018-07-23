@@ -8,7 +8,11 @@
 }
 @font-face{
     font-family: Saira-Regular;
-    src: url(../font/Saira-Regular.ttf)
+    src: url(../font/Saira-Regular.ttf);
+}
+@font-face{
+    font-family: Saira-Bold;
+    src: url(../font/Saira-Bold.ttf);
 }
 
 /* BACKGROUND */
@@ -150,7 +154,7 @@
 body {background-color: 
 	black;
 	color: white;
-    font-family: Saira-Regular
+    font-family: Saira-Regular;
 }
 .container-fluid{padding: 0px;}
 
@@ -201,15 +205,31 @@ body {background-color:
 #nav{
 	position: fixed;
 }
+#homebt-border{
+    position: absolute;
+    bottom: -20px;
+    left: 115px; 
+    opacity: 0.5;
+    animation-name: homebt-border;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+#home-button:hover #homebt-border{
+    opacity: 1;
+}
 #home-button{
 	position: absolute;
 	height: 60px;
 	width: 60px;
 	bottom: 0;
 	border-radius: 50%;
-	background-color: rgba(255,255,255,0.5);
+	background-color:white;
 	margin-left: 135px;
 	z-index: 10;
+    box-shadow: 0px 0px 5px 0px #333333;
+    
 }
 #home-button img{
 	margin-left: 15px;
@@ -251,19 +271,12 @@ body {background-color:
 #panel-contact{
 	left: 249.502px;
 }
-#home-button:hover:not(.active) #home-button,
-#home-button img:hover #home-button{
-	background-color: rgba(255,255,255,0.75);
-}
-#home-button:hover:not(.active),
+
 #panel-music:hover:not(.active),
 #panel-design:hover:not(.active),
 #panel-blog:hover:not(.active),
 #panel-contact:hover:not(.active){
 	opacity: 0.75;
-}  
-#home-button.active{
-	background-color: white;
 }
 #panel-music.active, #panel-design.active, #panel-blog.active, #panel-contact.active{
 	opacity: 1;
@@ -276,39 +289,41 @@ body {background-color:
 	left: 10px;
 	position: fixed;
 	height: 100vh;
+    z-index: 10;
 }
 #social-show{
     position: absolute;
     top: 10px;
     opacity: 0.5;
-	z-index: 10;
 }
 #social-hide{
 	position: absolute;
     top: 10px;
-    opacity: 0.75;
-	z-index: 10;
+    box-shadow: 0px 0px 5px 0px #333333;
 }
 #social-item-mb{
     position: absolute;
 	top: 70px;
 	transform: translateX(-50px);
 	transition: all 0.2s;
-	z-index: 10;
+    box-shadow: 0px 0px 5px 0px #333333;
 }
-#social-item a, #social-item-mb a{
+#social-item a{
     position: absolute;
-    opacity: 0.75;
+    opacity: 0.5;
     transition: 0.2s;
+}
+#social-item-mb a{
+    position: absolute;
 }
 #social-item{
 	position: absolute;
 	top: 50%;
 	margin-top: -170px;
-	z-index: 10;
 }
 #social-item a:hover{
 	opacity: 1;
+    box-shadow: 0px 0px 5px 0px #333333;
 }
 .soundcloud{top: 60px;}
 .deviantart{top: 120px;}
@@ -316,8 +331,22 @@ body {background-color:
 .googleplus{top: 240px;}
 .twitter{top: 300px;}
 
-.content{
-    padding: 0px 40px 0px 40px;
+/* CONTAINER */
+
+.kontainer {
+    padding: 0px 40px;
+    max-width: 100%;
+}
+@media (min-width: 768px) {
+    .kontainer {
+        padding: 0px 80px;
+    } 
+}
+@media (min-width: 1200px) {
+    .kontainer {
+        max-width: 1200px;
+        margin: 0px auto;
+    } 
 }
 
 /* BACKGROUND MUSIC */
@@ -339,7 +368,7 @@ body {background-color:
     100% {height: 22px;}
 }
 
-#volume{
+#volume, #muted{
     height: 40px;
     width: 40px;
     background-color: white;
@@ -348,14 +377,17 @@ body {background-color:
     right: 10px;
     border-radius: 0%;
     opacity: 0.5;
-    transition: all 0.5s;
+    transition: all 0.5s ease-out;
 	padding: 9px 8px;
 	margin: 0;
 	z-index: 10;
+    border: none;
+    cursor: pointer;
 }
-#volume:hover{
+#volume:hover, #muted:hover{
 	opacity: 1;
 	transform: rotateZ(-180deg);
+    box-shadow: 0px 0px 5px 0px #333333;
 }
 .volume-spectrum{
     background-color: black;
@@ -384,10 +416,44 @@ body {background-color:
     margin: 0px 1px;
 }
 
+/* SEARCH */
+
+#search-mg{
+    position: fixed;
+    width: 100%;
+    padding: 10px 10px 0px 60px;
+    z-index: 10;
+}
+#search{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 40px 10px 0px;
+    transition: all 0.3s ease-out;
+    right: 0;
+    opacity: 0.5;
+    float: right;
+    background-image: url(../img/elements/search.svg);  
+    background-repeat: no-repeat;
+    background-position: right;
+    animation-name: search;
+}
+#search:hover{opacity: 1;}
+#search:focus{
+    padding: 10px 45px 10px 15px;
+    border: none;
+    width: 100%;
+    border-radius: 0;
+    opacity: 1;
+    box-shadow: 0px 0px 5px 0px #333333;
+}
+
 /* COMMON ELEMENTS ANIMATION */
 
 @keyframes nav{
-	0% {margin-bottom: -70px;}
+	0% {margin-bottom: -90px;}
 	100% {margin-bottom: 0;}
 }
 @keyframes social{
@@ -398,8 +464,27 @@ body {background-color:
 	0% {margin-right: -60px;}
 	100% {margin-right: 0;}
 }
+@keyframes search{
+    0% {margin-right: -60px;}
+	100% {margin-right: 0;}
+}
+@keyframes home-button{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes homebt-border{
+    0%{transform: rotate(0) scale(1);
+    opacity: 0.1;}
+    25%{transform: rotate(-90deg) scale(0.9);
+    opacity: 0.4;}
+    50%{transform: rotate(-180deg) scale(1);
+    opacity: 0.2}
+    75%{transform: rotate(-270deg) scale(0.9); opacity: 0.3}
+    100%{transform: rotate(-360deg) scale(1);
+    opacity: 0.1;}
+}
 
-#nav, #social, #volume{
+#nav, #social, #volume, #search{
 	animation-duration: 0.2s;
 	animation-timing-function: ease-out;
 	animation-delay: 2s;
@@ -407,17 +492,14 @@ body {background-color:
 }
 #nav{animation-name: nav;}
 #social{animation-name: social;}
-#volume{animation-name: volume;}
 
 /* FOOTER */
 
 footer{
 	margin-top: 80px;
 	margin-bottom: 110px;
-}
-footer p, .home-footer p{
 	text-align: center;
-	margin-bottom: 0px;	
+    margin-bottom: 110px;
 }
 
 .black-button-hover{
@@ -428,11 +510,20 @@ footer p, .home-footer p{
     transition: all 0.2s;
     top: 0;
 }
+.button-hover{
+	height: 100%;
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	transform: translateY(100%);
+    transition: all 0.2s ease-out;
+}
 
-@media (min-width: 576px) { 
-
-
-
+@media (min-width: 576px) {
+    #search:focus{
+        width: 50%;
+    }
 }
 
 @media (min-width: 768px) { 
@@ -440,14 +531,16 @@ footer p, .home-footer p{
 	#social{
 		left: 20px;
 	}
-	#volume{
+	#volume, #muted{
 		top: 20px;
 		right: 20px;
 	}
-    #content{
-        padding: 0px 60px 0px 60px;
+    #search-mg{
+        padding: 20px;
     }
-    
+    #search:focus{
+        width: 300px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -459,15 +552,9 @@ footer p, .home-footer p{
 @media (min-width: 1200px) { 
 	
 	footer{
-        margin-bottom: 20px;
-        bottom: 0;
+        margin-bottom: 15px;
+        text-align: left;
+        padding-left: 20px;
     }
-	#footer-l{
-		margin-left: 20px;
-	}
-	#footer-r{
-		margin-right: 20px;
-	}
-
     
 } 

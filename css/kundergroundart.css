@@ -5,15 +5,53 @@
 	100% {margin-top: 0;}
 }
 
+body{
+    position: relative;
+}
+.list-group{
+    position: fixed;
+	z-index: 10;
+    right: 10px;
+    top: 50%;
+    margin-top: -85px;
+}
+.list-group-item{
+    height: 10px;
+    width: 10px;
+	border: none;
+    background-color: white;
+    opacity: 0.25;
+	padding: 0;
+    margin: 10px 0px;
+    transition: all 0.4s;
+}
+.list-group-item:first-child, .list-group-item:last-child{
+	border-radius: 0;
+}
+.list-group-item:hover{opacity: 0.5;}
+.list-group-item.active {
+	background-color: white;
+	transform: scale(1.25);
+	opacity: 1;
+}
+
+
+#scrollspy li a:hover{
+}
+#scrollspy li a.active{
+    opacity: 1;
+	transform-origin: center;
+	transform: scale(1.25);
+}
+
 .content-margin{
 	height: 100vh;
-	padding: 0px 40px 70px 40px;
-	
+	padding: 0px 10px 70px 10px;
 }
 .content-box{
 	height: 100%;
 	width: 100%;
-    position: relative;
+    display: flex;
 }
 #welcome img{
 	height: 50%;
@@ -34,11 +72,8 @@
 	background-size: cover;
 	background-position: right;
 }
-#about .container{
-    padding: 0;
-}
 .category-mb{
-	padding: 40px 0px;
+	padding-bottom: 40px; 
 }
 .category-tittle{
 	height: 25px;
@@ -61,6 +96,13 @@
 	text-align: justify;
 	padding: 0px;
 }
+footer{
+    margin-top: -130px;
+    margin-bottom: 0;
+}
+
+/* CONTENT ANIMATION */
+
 #about-content{
 	display: block;
 	padding: 20px;
@@ -70,15 +112,12 @@
 	font-size: 12pt;
 	color: white;
 }
-.button-group-1{
-	margin-top: 20px;
-}
 .category a{
 	display: block;
 	height: 40px;
-	background-color: rgba(255,255,255,0.75);
+	background-color: white;
 	margin-top: 20px;
-	padding-top: 7px;
+	padding-top: 8px;
 	text-decoration: none;
 	position: relative;
 	overflow: hidden;
@@ -108,17 +147,12 @@
 .category{
     position: relative;
 }
-.home-footer{
-    position: absolute;
-    bottom: 40px;
-    width: 100%;
-}
 
 @media (min-width: 768px) {
 
-	.content-margin{
-		padding: 0px 80px 70px 80px;
-	}
+    #scrollspy{
+        right: 20px;
+    }
 	.category{
 		height: 100%;
 	}
@@ -132,16 +166,22 @@
 		padding-left: 0px;
 		padding-right: 20px;
 	}
-
+    .button-group-1, .button-group-r{
+        margin-top: 20px;
+    }
+    .category a{
+        background-color: rgba(255,255,255,0.75);
+    }
+    
 }
 
 @media (min-width: 992px) {
 	
-	.text-r, .text-l, .text-r p{
+	.text-r, .text-l, #about-content{
 		font-size: 14pt;
 	}
 	.category a{
-		padding-top: 5px
+		padding-top: 6px
 	}
 	
 }
@@ -160,5 +200,8 @@
 	.text-r{
 		padding-left: 40px;
 	}
+    footer{
+        margin-top: -35px;
+    }
 	
 }

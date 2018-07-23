@@ -7,6 +7,9 @@
 #welcome .row{
     height: 100%;
 }
+.welcome-sm{
+    
+}
 .welcome-sm img{
     width: 60%;
     margin: 0px 20%;
@@ -51,38 +54,64 @@
 
 /* LIBRARY */
 
-a p{
-    text-decoration: none;
-}
 .category{
-    display: block;
-    background-color: rgba(255,255,255,0.75);
+    display: flex;
     height: 40px;
-    width: 100%;
     position: relative;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 40px 0px 0px 0px;
     transition: all 0.2s;
+    overflow: hidden;
 }
-.category:hover{
+.category:hover .button-hover{
+    transform: translateY(0);    
+}
+.lib-click{
     background-color: white;
 }
+.lib-noclick{background-color: white;}
 .category p{
     font-size: 17px;
     color: black;
     font-family: Brandon;
     padding-top: 8px;
-    padding-left: 20px;
+    padding-left: 10px;
+    margin: 0;
 }
-.category a img{
-    position: absolute;
-    top: 10px;
-    left: 20px;
+.category:hover .category p{
+    text-decoration: none;  
 }
+.category p:hover{
+    text-decoration: none;
+}
+.category img{
+    transition: all 0.2s;
+}
+.category div{
+    font-size: 17px;
+    color: black;
+    font-family: Brandon;
+    padding-top: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.category img:hover{
+    opacity: 1;
+}
+#page-title{
+    font-family: Saira-Bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0px 30px 0px;
+}
+
 .item{
     position: relative;
     overflow: hidden;
     margin-top: 20px;
+    height: auto;
+    border: none;
+    background: none;
 }
 .item-info{
     background-color: white;
@@ -94,23 +123,56 @@ a p{
 }
 .item img, .item-b img{
     width: 100%;
+    transition: all 0.2s;
+    filter: grayscale(100%);
+}
+.tittle-mg{
+    margin-top: -40px;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+    transform: translateY(0px);
+}
+.item:hover .item img{
+    filter: grayscale(0%);
+}
+.item:hover .tittle-mg{
+    transform: translateY(0);
 }
 .item p{
     text-align: center;
-    display: block;
     padding: 10px 20px;
     margin: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
-    transition: all 0.2s;
+    background-color: rgba(0,0,0,0.75);
 	color: white;
+    height: 40px;
+    
+}   
+.item p:hover{
+    text-decoration: none;
+}
+.tag{
+    color: black;
+    background-color: white;
+    opacity: 0.75;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 20px;
+    padding: 3px 5px;
+    font-size: 10px;
+    font-family: Saira-Bold;
+}
+.tag:hover{
+    opacity: 1;
 }
 .item-tittle{
     color: black;
     text-decoration: none;
+    margin-left: 0;
 }
 .item-info .row{
     padding: 0px 10px;
@@ -127,26 +189,68 @@ a p{
     position: relative;
     padding: 0;
 }
-.black-button-hover{
-    transform: translateY(24px);
+.item-category img:hover{
+    opacity: 1;
 }
-.item-category-button:hover .black-button-hover{
-     transform: translateY(0);
+/* MODEL */
+
+.modal{
+    
+}
+.modal-dialog{
+    width: 100%;
+}
+.modal-content{
+    border-radius: 0;
+    background-color: none;
+}
+.modal-mg .row{
+    padding: 0px 10px 0px 70px;
+}
+.modal .col-12{
+    position: relative;
+}
+.modal-mg img{
+    width: 100%;
+    height: auto;
+}
+.modal-mg{
+    height: 100vh;
+    padding-bottom: 70px;
+    position: relative;
+    height: 100vh;
+}
+.modal button{
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -30px;
+    padding: 15px;
+}
+
+@media (min-width: 576px) {
+    
+    .welcome-sm img{
+        width: 40%;
+        margin: 0px 30%;
+    }
+    
 }
 
 @media (min-width: 768px) {
     
-    
-
     #welcome{
         padding: 0px 20px 70px 20px;
     }
-    .item p{
-        transform: translateY(0px);
+    #page-title{
+        font-size: 40px;
     }
-    .item:hover .item p{
-        transform: translateY(0);
-    }
+       
     
 }
 
@@ -155,8 +259,14 @@ a p{
     #welcome{
         padding: 0px 60px 70px 60px;
     }
-    .library{
-        padding: 0px 23px;
+    .lib-click{
+        background-color: rgba(255,255,255,0.75);
+    }
+    .category img{
+        opacity: 0.75;
+    }
+    .tittle-mg{
+        transform: translateY(40px);
     }
 }
 
@@ -173,5 +283,6 @@ a p{
         padding-left: 80px;
         padding-right: 60px;
     }
+    
     
 }

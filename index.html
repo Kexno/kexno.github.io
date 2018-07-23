@@ -10,7 +10,7 @@
 		<link href="css/common.css" rel="stylesheet" type="text/css">
 		<link href="css/kundergroundart.css" rel="stylesheet" type="text/css">
   </head>
-  		<body>
+  		<body data-spy="scroll" data-target="#scrollspy" data-offset="0">
   		<!-- body code goes here --> 
 		<div class="container-fluid">
 			
@@ -43,16 +43,18 @@
 			<!-- PANEL -->
 			
 			<div id="nav">
-			<a id="home-button" class="active" href="index.html">
-				<img src="img/elements/ka-black.svg">
-			</a>
-			<div id="panel">
-				<img id="panel-bg" src="img/elements/panel.svg">
-				<a href="music.html"><img id="panel-music" src="img/elements/panel-music.svg"></a>
-				<a href="design.html"><img id="panel-design" src="img/elements/panel-design.svg"></a>
-				<a href="blog.html"><img id="panel-blog" src="img/elements/panel-blog.svg"></a>
-				<a href="contact.html"><img id="panel-contact" src="img/elements/panel-contact.svg"></a>
-			</div>
+                <img id="homebt-border" src="img/elements/homebt-border.svg">
+                <a id="home-button" class="active" href="index.html">
+				    <img src="img/elements/ka-black.svg">
+                </a>
+                
+                <div id="panel">
+                    <img id="panel-bg" src="img/elements/panel.svg">
+                    <a href="music.html"><img id="panel-music" src="img/elements/panel-music.svg"></a>
+                    <a href="design.html"><img id="panel-design" src="img/elements/panel-design.svg"></a>
+                    <a href="blog.html"><img id="panel-blog" src="img/elements/panel-blog.svg"></a>
+                    <a href="contact.html"><img id="panel-contact" src="img/elements/panel-contact.svg"></a>
+                </div>
 			</div>
 
             <!-- SOCIAL -->
@@ -105,26 +107,38 @@
 
             <!-- BACKGROUND MUSIC -->
             
-            <audio autoplay loop>
+            <audio autoplay loop id="bgmusic">
                 <source src="audio/background-music.ogg" type="audio/ogg">
             </audio>
             
-            <div id="volume" class="row">
+            <button id="volume" type="button" onclick="disableMute()" class="row">
                 <div class="volume-spectrum align-self-center" id="vs1"></div>
                 <div class="volume-spectrum align-self-center" id="vs2"></div>
                 <div class="volume-spectrum align-self-center" id="vs3"></div>
 				<div class="volume-spectrum align-self-center" id="vs4"></div>
+            </button>
+            <button id="muted" type="button" onclick="enableMute()" class="row">
 				<div class="mute-spectrum align-self-center"></div>
 				<div class="mute-spectrum align-self-center"></div>
 				<div class="mute-spectrum align-self-center"></div>
 				<div class="mute-spectrum align-self-center"></div>
+            </button>
+            
+            <!-- SCROLL SPY -->
+            
+            <div id="scrollspy" class="list-group" style="list-style-type:none">
+                <a class="list-group-item list-group-item-action active" href="#welcome"></a>
+                <a class="list-group-item list-group-item-action" href="#about"></a>
+                <a class="list-group-item list-group-item-action" href="#music"></a>
+                <a class="list-group-item list-group-item-action" href="#design"></a>
+                <a class="list-group-item list-group-item-action" href="#blog"></a>
             </div>
             
 		</div>
             
 		<!-- CONTENT -->
             
-		<div class="container">
+		<div class="kontainer">
 			
 			<!-- WELCOME -->
 			
@@ -138,42 +152,44 @@
 		<!-- ABOUT -->
             
 		<div id="about" class="container-fluid">
-			<div class="container">
+			<div class="kontainer">
 				<div class="content-margin">
-					<div class="content-box">
-						<div class="row category-mb d-md-none">
+					<div class="content-box align-items-center">
+                        <div class="content-center">
+						<div class="row category-mb d-md-none align-items-center">
                             <img class="category-icon col-6" src="img/elements/ka-white.svg">
-                            <img class="category-tittle col-6 align-self-center" src="img/elements/about-text.svg">
+                            <img class="category-tittle col-6" src="img/elements/about-text.svg">
                        	</div>
-						<div class="row category">
-							<div class="icon-stacked-l col-md-3 d-none d-md-block align-self-center"><img src="img/elements/about-stacked.svg"></div>
-							<div class="text-r col-12 col-md-9 align-self-center">
-								<div id="about-content">Kartist - jdjf dhfif doifsuf fjufid dififj poipj u pskiij lloi ioekiidik poji oiuj oej  du ueufhf dhyfiw a[rp didfj weo wepoopfi oerir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o oero xouj ofv;wjg tu;onw pi;o eeiug mpe ouo gio aw wpgu o;jf; hsls jg;/ whg
+						<div class="row category align-items-center">
+							<div class="icon-stacked-l col-md-3 d-none d-md-block"><img src="img/elements/about-stacked.svg"></div>
+							<div class="text-r col-12 col-md-9">
+								<div id="about-content">Hello! I am Kartist (real name: Truong Bao Kien), I was born in October 7, 1998 . I am a Vietnam pianist and multimedia designer.
 								<br><br>
-								Jow om ivt npw iwehn vo;ew qihg nomw ci fp'n eevli sek mg;u y ao; ug vo nloa wee uj goma ej ongv ea o;ug jo;aec iejg; onawoi jfnlos caok jhgln ajgfole ig;on aw ig uno ;cwiv
+								Although started playing the piano and composing quite late, but by burning passion music, I have been trying to pursue the dream of becoming a professional pianist, composer and music producer. Beside, I'm taking a multimedia design course as well as my second ability at Arena Multimedia. At present, my music skills and knowledge are mostly from self-study, which have been just started for few years.
 								<br><br>
-								Midif dif fidf difud dodjfof difidiud vofikfif doifsuduf didfj duf fidfif spiq weo wepoopfi oerir pqlo õe po  eiori oirlrkrg efasfa fowp ;r oero xouj ofv;wjg tu;onw pi;o eeiug mpe ouo gio aw wpgu o;jf; hsls jg;/ whg
+								I want to be an "indie artist", doing everything by myself, playing my own music, creative freedom without the unlimited, not in the model. Also, I am a technology enthusiast, a fan of FOSS and ... a cat lover :"&#41;
 								</div>
 							</div>
 						</div>
+                        </div>
 					</div>	
 				</div>
 			</div>
 		</div>
 			
-		<div class="container">
+		<div class="kontainer">
 				
 		<!-- MUSIC -->
-			
-			<div class="content-margin">
-				<div class="content-box">
-					<div class="row category-mb d-md-none">
-						<img class="category-tittle col-6 align-self-center" src="img/elements/panel-music.svg">
+			<div id="music" class="content-margin">
+				<div class="content-box align-items-center">
+                    <div class="content-center">
+					<div class="row category-mb d-md-none align-items-center">
+						<img class="category-tittle col-6" src="img/elements/panel-music.svg">
                         <img class="category-icon col-6" src="img/elements/music-icon.svg">
                     </div>
-					<div class="row category">
-					  <div class="text-l col-12 col-md-9 align-self-center">
-							Kartist - jdjf dhfif doifsuf fjufid dififj poipj u pskiij lloi ioekiidik poji oiuj oej  du ueufhf dhyfiw a[rp didfj weo wepoopfi oerir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o oero xouj ofv;wjg tu;onw pi;o eeiug mpe ouo gio aw wpgu o;jf; hsls jg;/ whg erir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o ;jf; hsls jg; ;jf; hsls jg;/ whg erir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o oero xouj ofv;wjg tu;onw pi;o eeiug mpe ouo
+					<div class="row category align-items-center">
+					  <div class="text-l col-12 col-md-9">
+							My main music instrument is piano. I play every compositions that I want with a lot of genres, arrange compositions and compose new compositions.In addition, I create a lot of playlists of music or famous musicians in order people can refer.
 						<div class="button-group-1 row no-gutters">
 								<a class="col" href="">
 									<div class="button-hover"></div>
@@ -183,41 +199,43 @@
 								<a class="col" href="">
 									<div class="button-hover"></div>
 								<p>Arranged by Kartist</p>
-						  </a>
+						      </a>
 							</div>
 						<div class="row no-gutters">
 								<a class="col" href="">
 									<div class="button-hover"></div>
-								<p>Other compositions</p>
-						  </a>
+								    <p>Other artists's compositions</p>
+						      </a>
 								<div class="space col-auto"></div>
 								<a class="col" href="">
 									<div class="button-hover"></div>
-								<p>Favorite playlists</p>
+								<p>Other artist's playlists</p>
 						  </a>
 							</div>
 					  </div>
-					  <div class="icon-stacked-r col-md-3 d-none d-md-block align-self-center">
+					  <div class="icon-stacked-r col-md-3 d-none d-md-block">
 							<img src="img/elements/music-stacked.svg">
 					  </div>
 					</div>
+                    </div>
 				</div>
 			</div>
 			
 		  <!-- DESIGN -->
 			
-			<div class="content-margin">
-				<div class="content-box">
-					<div class="row category-mb d-md-none">
+			<div id="design" class="content-margin">
+				<div class="content-box align-items-center">
+                    <div class="content-center">
+					<div class="row category-mb d-md-none align-items-center">
                         <img class="category-icon col-6" src="img/elements/design-icon.svg">
-						<img class="category-tittle col-6 align-self-center" src="img/elements/panel-design.svg">
+						<img class="category-tittle col-6" src="img/elements/panel-design.svg">
                     </div>
-					<div class="row category">
-						<div class="icon-stacked-l col-md-3 d-none d-md-block align-self-center">
+					<div class="row category align-items-center">
+						<div class="icon-stacked-l col-md-3 d-none d-md-block">
 							<img src="img/elements/design-stacked.svg">
 						</div>
-						<div class="text-r col-12 col-md-9 align-self-center">
-							Kartist - jdjf dhfif doifsuf fjufid dififj poipj u pskiij lloi ioekiidik poji oiuj oej  du ueufhf dhyfiw a[rp didfj weo wepoopfi oerir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o oero xouj ofv;wjg tu;onw pi;o eeiug mpe ouo gio aw wpgu o;jf; hsls jg;/ whg erir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o ;jf; hsls jg; ;jf; hsls jg;/ whg erir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o oero xouj ofv;wjg tu;onw pi;o eeiug mpe ouo
+						<div class="text-r col-12 col-md-9">
+							View what I designed with creative and design skills, digital art, design and interfaces; and next will be the animation and vfx, ... currently my strongest design array is the free vector illustration and my favorite softwares like Inkscape, GIMP, Krita, Blender,...
 						  <div class="button-group-1 row no-gutters">
 								<a class="col" href="">
 									<div class="button-hover"></div>
@@ -240,28 +258,26 @@
 									<p>Animation &amp; VFX</p>
 								</a>
 							</div>
-						  <div class="row no-gutters justify-content-center">
-								<a class="col-6" href="">
-									<div class="button-hover"></div>
-									<p>Customization</p>
-								</a>
-							</div>
+						  
 						</div>
 					</div>
+                    </div>
 				</div>
 			</div>
+            
 			
 		  <!-- BLOG -->
 		
-			<div class="content-margin">
-				<div class="content-box">
-					<div class="row category-mb d-md-none">
-						<img class="category-tittle col-6 align-self-center" src="img/elements/panel-blog.svg">
+			<div id="blog" class="content-margin">
+				<div class="content-box align-items-center">
+                    <div class="content-center">
+					<div class="row category-mb d-md-none align-items-center">
+						<img class="category-tittle col-6" src="img/elements/panel-blog.svg">
                         <img class="category-icon col-6" src="img/elements/blog-icon.svg">
                     </div>
-					<div class="row category">
-						<div class="text-l col-12 col-md-9 align-self-center">
-							Kartist - jdjf dhfif doifsuf fjufid dififj poipj u pskiij lloi ioekiidik poji oiuj oej  du ueufhf dhyfiw a[rp didfj weo wepoopfi oerir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o oero xouj ofv;wjg tu;onw pi;o eeiug mpe ouo gio aw wpgu o;jf; hsls jg;/ whg erir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o ;jf; hsls jg; ;jf; hsls jg;/ whg erir pqlorlrkrg eor pr afasfa fowp ;rorp orop rpork o oero xouj ofv;wjg tu;onw pi;o eeiug mpe ouo
+					<div class="row category align-items-center">
+						<div class="text-l col-12 col-md-9">
+							Updating news about my musical activities; my tutorials, reviews,... about music and design or my other experiences,...
 						  <div class="row no-gutters">
 								<a class="col" href="">
 									<div class="button-hover"></div>
@@ -273,30 +289,25 @@
 									<p>Design blog</p>
 								</a>
 							</div>
+                            <div class="row no-gutters justify-content-center">
+								<a class="col-6" href="">
+									<div class="button-hover"></div>
+									<p>Others</p>
+								</a>
+							</div>
 						</div>
-						<div class="icon-stacked-r col-md-3 d-none d-md-block align-self-center">
+						<div class="icon-stacked-r col-md-3 d-none d-md-block">
 							<img src="img/elements/blog-stacked.svg">
 						</div>
-					
-                        <!-- FOOTER -->
-			
-                        <div class="home-footer row no-gutters d-none d-md-block">
-                            <p class="col-12">Copyright © 2018 Kartist. All rights reserved.</p>
-				            <p class="col-12">Background music by Kartist</p>
-                        </div>
-                        
                     </div>
-                    
-                    <div class="home-footer row no-gutters d-md-none">
-                        <p class="col-12">Copyright © 2018 Kartist. All rights reserved.</p>
-				        <p class="col-12">Background music by Kartist</p>
-                    </div>
-                    
+                </div>    
                 </div>
-            </div>    
-		</div>
-					
+            </div>
+        </div>
             
+        <!-- FOOTER -->
+			
+        <footer>Copyright © 2018 Kartist. All rights reserved.</footer> 
             
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 		<script src="js/jquery-3.2.1.min.js"></script>
@@ -327,12 +338,34 @@
 				
 				// VOLUME //
 				
-				$(".mute-spectrum").hide();
+				$("#muted").hide();
 
-				$(".square0").hover(function(){
-					$(this).css({"opacity": "0.025"});
-					}, function(){
-						$(this).css({"opacity": "0"});
+				var audio = document.getElementById("bgmusic");
+                                
+                $("#volume").click(function(){
+                    $("#volume").fadeOut(200);
+                    $("#muted").fadeIn(200);
+                    audio.pause();
+                })
+                
+                $("#muted").click(function(){
+                    $("#muted").fadeOut(200);
+                    $("#volume").fadeIn(200);
+                    audio.play();
+                })
+				
+				// SMOOTH SCROLLING //
+				
+				$(".list-group-item").on('click', function(event) {
+					if(this.hash !== "") {
+						event.preventDefault();
+						var hash = this.hash;
+						$('html, body').animate({
+							scrollTop: $(hash).offset().top
+						}, 500, function(){
+							window.location.hash = hash;
+						});
+					}
 				});
 				
 			});

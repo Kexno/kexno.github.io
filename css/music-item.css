@@ -5,37 +5,186 @@
     100% {margin-top: 40px; opacity: 1;}
 }
 
-.content{   
-    margin-top: 40px;
-    animation-name: content;
-    animation-duration: 2s;
-    animation-fill-mode: both;
+.kontainer{
+    padding-top: 40px;
 }
-
+#page-title{
+    font-family: Brandon;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.cover-photo img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;        
+}
 #text{
     margin-top: 20px;
-}
-#tittle{
-    font-size: 16pt;
 }
 #description{
     text-align: justify;
     margin-bottom: 0;
 }
-.info{
+.playlist-about{
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.info{margin-bottom: 20px;}
+.info p{
     margin-bottom: 0;
 }
 .element-text{
     margin-top: 40px;
     text-align: center;
-}
-#tittle, .info{
     margin-bottom: 20px;
 }
-.scplayer{
-    
+#tittle{
+    font-size: 16pt;
+    margin-bottom: 20px;
+}
+#ytp{
+    padding: 0px 10px;
+}
+#website{
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+#website a{
+    display: flex;
+    height: 40px;
+    background-color: white;
+    position: relative;
+}
+#website a p{
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 0;
+    position: relative;
+}
+#share-playlist div div{
+    background-color: white;
+    color: black;
+    padding: 8px 10px;
+    height: 40px;
+}
+#share-playlist div a{
+    opacity: 0.75;
+    transition: all 0.2s;
+}
+#share-playlist div a:hover{
+    opacity: 1;
+}
+#share-button{
+    height: 40px;
+    width: auto;
+    background-color: white;
+    margin-right: 10px;
+    margin-bottom: 7.5px;
+    position: relative;
+    overflow: hidden;
+}
+#share-button .button-hover{
+    top: 0;
+    left: 0;
+}
+#share-button img{
+    margin-left: 10px;
+    padding: 0;
+    width: 24px;
+    top: 4px;
+    cursor: pointer;
 }
 
+#share-button:hover .button-hover{
+    transform: translateY(0);
+}
+#share-button p{
+    color: black;
+    margin-top: 9px;
+}
+#share-ex{
+    position: absolute;
+    top: 116px;
+    box-shadow: 0px 0px 5px 0px #333333;
+    right: 0;
+}
+#share-ex img{
+    opacity: 1;
+    transition: 0.2s;
+    padding: 0;
+}
+#share-ex img:hover{
+    opacity: 1;
+}
+#sheet{
+    padding: 0px 0px;
+}
+#ms{
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+#mu{
+    padding-top: 0;
+    height: 100vh;
+    padding-bottom: 80px;
+}
+#spotify{
+    height: 100vh;
+    padding: 40px 10px 110px 10px;
+}
+#spotify iframe{
+    height: 100%;
+    width: 100%;
+}
+footer{
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    
+    .carousel-indicators{
+        padding-left: 10px;
+    }
+    #mu{
+        padding-bottom: 90px;
+    }
+    #page-title{
+        font-size: 40px;
+    }
+    #website{
+        margin-bottom: 0;
+    }
+    #website a{
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    #share-playlist div div{
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+}
+@media (min-width: 992px) {
+    
+    .cover-photo img{
+        padding-right: 10px;
+    }
+    .playlist-about{
+        padding-left: 20px;
+    }
+    
+    #website a:hover .button-hover{
+        transform: translateY(0);
+    }
+    #share-button{
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    #share-ex img{
+        opacity: 0.75;
+        transition: 0.2s;
+    }
+}
 @media (min-width: 1200px) {
 
     #text{
